@@ -41,25 +41,23 @@ ShoulderGuard はプライバシーを最優先に設計されています。
 
 ## セットアップ
 
-### 方法 A: GUI アプリとして起動（推奨）
+### 方法 A: .app をダウンロードしてインストール（推奨）
+
+1. [Releases](https://github.com/sdkjp/ShoulderGuard-For-Mac/releases/latest) から `ShoulderGuard-1.0.zip` をダウンロード
+2. zip を解凍して `ShoulderGuard.app` を `/Applications` にドラッグ
+3. 初回起動時はシステム設定でカメラ・アクセシビリティの権限を許可
+
+> Python や依存ライブラリのインストールは不要です。
+
+### 方法 B: ソースからビルド
 
 ```bash
-bash run_gui.sh
-```
-
-初回は依存ライブラリ（dlib を含む）のビルドに **数分** かかります。
-
-### 方法 B: .app としてインストール
-
-```bash
-# まず run_gui.sh を一度実行して venv を作成する
+# 依存ライブラリをインストールして GUI を起動（初回は数分かかります）
 bash run_gui.sh
 
 # .app をビルドして /Applications にインストール
 bash build_app.sh
 ```
-
-Launchpad または Spotlight で「ShoulderGuard」と検索して起動できます。
 
 ### 方法 C: CLI スクリプトのみ
 
