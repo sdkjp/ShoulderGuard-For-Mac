@@ -9,6 +9,10 @@ settings:
   # 何秒ごとにチェックするか（小さいほど検出が速いがCPU負荷が上がる）
   check_interval_sec: 1.0
 
+  # 2人以上検出し続けないとトリガーしない時間（秒）
+  # → 一瞬映り込んだだけでは反応しない。連続検出のみ実行
+  trigger_delay_sec: 2.0
+
   # 一度トリガーしてから次にトリガーするまでの最短間隔（秒）
   cooldown_sec: 15
 
@@ -27,9 +31,6 @@ settings:
 
   # 別タブで開くURL（open_url: true のとき使用）
   redirect_url: "https://www.google.com"
-
-  # カメラ映像をプレビュー表示する（デバッグ用）
-  show_preview: false
 
 # ============================================================
 #  アクション設定（true / false で切り替え）
