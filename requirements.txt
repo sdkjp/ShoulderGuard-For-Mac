@@ -2,3 +2,7 @@ opencv-python
 pyyaml
 customtkinter
 Pillow
+cmake
+dlib
+face-recognition
+setuptools
