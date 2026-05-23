@@ -1,4 +1,4 @@
-# 🛡️ ShoulderGuard
+# ShoulderGuard
 
 カメラで第三者（のぞき見）を検出し、自動でMacを守るPythonスクリプトです。
 
